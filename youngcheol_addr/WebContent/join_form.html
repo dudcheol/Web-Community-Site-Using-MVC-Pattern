@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>가입하기</title>
+<link rel="stylesheet" href="resources/join_form.css" type="text/css"></link>
+</head>
+<body>
+<div id="wrapper">
+<div class="shadow text1">Registration Form</div>
+<div class="d1">
+<form name=form1 method="post" action="http://localhost:8080/youngcheol_addr/AddrServlet?key=join">
+ <fieldset>
+	<legend class="script whiteColor"><span>Sign up!</span></legend>
+	<ul>
+		<li>이름 <input type="text" name="username" autofocus required placeholder="공백없이 입력하세요"></li>
+		<li>전화번호 <input type="text" name="tel" placeholder="***.****.***"></li>
+		<li>이메일 <input type="text" name="email" placeholder="****@****.***"></li>
+		<li>성별 
+			<select name=sex>
+				<option selected>남</option>
+				<option>여</option>
+			</select>
+		</li>
+	</ul>
+	<div class="center">
+	<input type="submit" name="submit" value="확인">
+	<input type="reset" name="reset"  value="취소">
+	</div>
+</fieldset> 
+	
+
+	<!-- <table>
+		<tr>
+			<td>이름</td>
+			<td><input type=text size=20 name=username autofocus required placeholder="공백없이 입력하세요"></td>
+		</tr>
+		<tr>
+			<td>전화번호</td>
+			<td><input type=text size=20 name=tel placeholder="***.****.***"></td>
+		</tr>
+		<tr>
+			<td>이메일</td>
+			<td><input type=text size=20 name=email placeholder="****@****.***"></td>
+		</tr>
+		<tr>
+			<td>성별</td>
+			<td>
+				<select name=sex>
+					<option selected>남</option>
+					<option>여</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan=2 align=center>
+			<input type=submit value="확인">
+			<input type=reset value="취소">
+			</td>
+		</tr>
+	</table> -->
+	
+</form>
+</div>
+</div>
+</body>
+</html>

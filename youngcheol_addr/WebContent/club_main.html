@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>메인화면</title>
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="resources/club_main.css" type="text/css"></link>
+</head>
+<body>
+
+<div id="wrapper">
+<div class="menuCenter">
+<div class="ribbon">
+		<a href="http://localhost:8080/youngcheol_addr/club_main.html"><span>Home</span></a>
+		<a href="http://localhost:8080/youngcheol_addr/about.html"><span>About</span></a>
+		<a href="http://localhost:8080/youngcheol_addr/AddrServlet?key=list" style = "color:red"><span>Address</span></a>
+		<a href="javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><span>Contact</span></a>
+</div>
+</div>
+<div class="plate">
+  <p class="script"><span>2018 KPU Study Club</span></p>
+  <p class="shadow text1">WELCOME!</p>
+  <div class="whiteColor center text2">웹 기술에 관심있는 학생들간의</div>
+  <div class="whiteColor center text2">소통을 위한 커뮤니티 클럽입니다.</div>
+  
+  <p class="script"><span>
+  <a href="http://localhost:8080/youngcheol_addr/AddrServlet?key=join" target="_self" class="button-3d text3">주소록에 등록하세요!</a>
+  </span></p>
+</div>
+</div>  
+<div id="light" class="white_content"><h1>연락처</h1>오류나 개선사항 등 전하고 싶은 말이 있다면 사이트 관리자에게 연락해주세요.<br/><br/><h3>- 이메일:95_pyc@naver.com</h3><br/><br/><div class="right script"><a href = "javascript:void(0)" class="button-3d text2" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">CLOSE</a></div>
+</div>
+        <div id="fade" class="black_overlay"></div>
+</body>
+</html>
